@@ -14,7 +14,7 @@ plt.ylabel('Visitors')
 plt.show()
 
 #2
-def GD(f, start, lr, n_iter=50, tol=1e-05):
+def gradient_descent(f, start, lr, n_iter=50, tol=1e-05):
     result = start
     for _ in range(n_iter): 
         new_val = -lr * np.gradient(f)
@@ -26,4 +26,4 @@ def GD(f, start, lr, n_iter=50, tol=1e-05):
 mu = np.mean(s)
 var = np.var(s, ddof=1)
 
-GD(s, y, 0.2)
+gradient_descent(s, y, 0.2)

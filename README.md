@@ -31,7 +31,7 @@ plt.show()
 <p>For problem 2 I had created a Gradient Descent Algorithm with the following: <br></p>
 
 ```python
-def GD(f, start, lr, n_iter, tol):
+def gradient_descent(f, start, lr, n_iter, tol):
     result = start
       
     for _ in range(n_iter): 
@@ -52,5 +52,5 @@ var = np.var(s, ddof=1)
 <p>Once the values were assigned to the variables I passed them into the gradiend descent function.</p>
 
 ```python
-
+gradient_descent(s, y, 0.2)
 ```
