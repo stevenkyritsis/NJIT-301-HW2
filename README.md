@@ -28,5 +28,5 @@ plt.show()
 <p>This is the output of the graph:<br></p>
 
 ![Graph]
-(image1.png)
+(/images/image1.png)
 
