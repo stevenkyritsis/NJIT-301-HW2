@@ -12,7 +12,7 @@ plt.show()
 
 #2
 def GD(f, start, lr, n_iter=50, tol=1e-05):
-    res = start
+    result = start
       
     for _ in range(n_iter): 
         # graident is calculated using the np.gradient 
@@ -20,12 +20,12 @@ def GD(f, start, lr, n_iter=50, tol=1e-05):
         new_val = -lr * np.gradient(f)
         if np.all(np.abs(new_val) <= tol):
             break
-        res += new_val
+        result += new_val
           
     # we return a vector as the gradient can be
     # multivariable function. if the function has 1
     # dependent variable then it returns a scalar value.
-    return res
+    return result
 
 mu = np.mean(s)
 var = np.var(s, ddof=1)
