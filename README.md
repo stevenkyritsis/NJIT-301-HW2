@@ -42,3 +42,15 @@ def GD(f, start, lr, n_iter, tol):
     return result
 ```
 
+<p>After the gradient descent algorithm was created I stored the mean and variance of the poisson distribution in the following variables: <br></p>
+
+```python
+mu = np.mean(s)
+var = np.var(s, ddof=1)
+```
+
+<p>Once the values were assigned to the variables I passed them into the gradiend descent function.</p>
+
+```python
+
+```
